@@ -1,7 +1,7 @@
 {
-  "name": "nest-prisma-template",
+  "name": "nest-health-worker",
   "version": "0.0.1",
-  "description": "Starting template for nest-prisma development under the city of Bratislava.",
+  "description": "Health worker which checks the health of the apps",
   "author": "Bratislava city inovation",
   "private": false,
   "license": "LICENSED",
