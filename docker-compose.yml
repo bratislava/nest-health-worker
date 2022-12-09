@@ -3,6 +3,7 @@ services:
   nest:
     depends_on:
       - postgres
+    restart: always
     build:
       context: .
       target: dev
