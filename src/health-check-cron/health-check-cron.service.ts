@@ -21,8 +21,9 @@ export class HealthCheckCronService {
   private readonly logger = new Logger(HealthCheckCronService.name);
 
   @Cron('*/90 * * * * *')
-  async handleCron() {
+  async handleCron(string: string, type: DOMParserSupportedType) {
     const healths = await this.healthService.getHealthChecks({});
+    this.logger.log('running cron' );
     for (const health of healths.items) {
       const result = await axios
         .get(health.url, { timeout: 10000 })
@@ -33,7 +34,7 @@ export class HealthCheckCronService {
 
           if (health.result_rule['type'] === 'fe') {
             const parser = new DomParser();
-            const doc = parser.parseFromString(response.data);
+            const doc = parser.parseFromString(response.data, type);
 
             if (typeof health.result_rule['className'] !== 'undefined') {
               textContent = doc.getElementsByClassName(
