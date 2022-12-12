@@ -6,13 +6,13 @@ services:
     restart: always
     build:
       context: .
-      target: dev
+      target: prod
     init: true
     env_file:
       - .env.docker
     environment:
       PORT: 3001
-    command: npm run start:dev
+    command: npm run start:prod-docker
     ports:
       - "127.0.0.1:3001:3001"
       - "127.0.0.1:9229:9229"
@@ -23,6 +23,7 @@ services:
       - .env.db.docker
     environment:
       PGPORT: 54320
+      POSTGRES_HOST: localhost
     expose:
       - '54320'
     ports:
