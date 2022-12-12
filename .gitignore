@@ -42,5 +42,7 @@ eslint-report.json
 .env.db
 .env.test
 .env.local
+.env.db.docker
+.env.docker
 .scannerwork
 
