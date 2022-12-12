@@ -9,6 +9,11 @@ If you want to run an application without installing it locally quickly, you can
 docker-compose up --build
 ```
 
+Production running on docker.
+```bash
+docker-compose -f docker-compose.prod.yml up
+```
+
 # Local installation
 
 - Run npm installation for dependencies
