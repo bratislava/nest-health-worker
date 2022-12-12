@@ -40,6 +40,11 @@ If you have issues connecting to your Postgres, maybe you need to set timeout `c
 DATABASE_URL="postgresql://user:password@localhost:5432/?connect_timeout=30&schema=public"
 ```
 
+Importing db on docker
+```bash 
+docker container exec -i 16b905a52621 psql -U nest-health-worker nest-health-worker < nest.sql
+```
+
 ## Running the app
 
 ```bash
