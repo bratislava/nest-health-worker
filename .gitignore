@@ -39,6 +39,7 @@ lerna-debug.log*
 test-report.xml
 eslint-report.json
 .env
+.env.db
 .env.test
 .env.local
 .scannerwork
