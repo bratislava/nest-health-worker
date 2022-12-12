@@ -19,6 +19,8 @@ services:
     image: postgres:latest
     env_file:
       - .env.db.docker
+    environment:
+      PGPORT: 54320
     expose:
       - '54320'
     ports:
