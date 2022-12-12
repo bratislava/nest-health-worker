@@ -6,7 +6,7 @@ services:
     restart: always
     build:
       context: .
-      target: dev
+      target: prod
     init: true
     environment:
       - PORT=3001
