@@ -28,6 +28,8 @@ spec:
           envFrom:
             - secretRef:
                 name: database-secret
+            - secretRef:
+                name: sentry-secret
             - configMapRef:
                 name: env
           readinessProbe:
