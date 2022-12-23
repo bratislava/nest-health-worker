@@ -42,7 +42,7 @@
     "class-validator": "^0.13.2",
     "crypto": "^1.0.1",
     "dom-parser": "^0.1.6",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jwks-rsa": "^2.1.4",
     "passport-azure-ad": "^4.3.4",
     "passport-http-bearer": "^1.0.1",
