@@ -39,7 +39,7 @@
     "axios": "^1.2.1",
     "base64url": "^3.0.1",
     "class-transformer": "^0.5.1",
-    "class-validator": "^0.13.2",
+    "class-validator": "^0.14.0",
     "crypto": "^1.0.1",
     "dom-parser": "^0.1.6",
     "jsonwebtoken": "^8.5.1",
